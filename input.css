@@ -5,3 +5,18 @@
 .active{
     @apply translate-y-0;
 }
+
+.email_pass_placeholder_style{
+    @apply absolute;
+    @apply -top-3;
+    @apply left-2;
+    @apply text-blue-500;
+    @apply text-sm;
+    @apply px-2;
+    
+}
+
+.email_pass_div_style{
+    @apply border-blue-800;
+    @apply border-2;
+}

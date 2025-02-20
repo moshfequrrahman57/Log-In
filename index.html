@@ -20,9 +20,9 @@
         flex flex-col   w-full items-center  -translate-y-52 md:translate-y-0
         md:relative md:top-0 md:flex-row md:justify-around 
          md:z-0 transition-transform duration-500">
-            <a href="" class="mx-2 my-3 md:my-0 font-bold text-lg rounded hover:text-lime-400">Profile</a>
-            <a href="" class="mx-2 my-2 md:my-0 font-bold text-lg rounded hover:text-lime-400">Setting</a>
-            <a href="" class="mx-2 my-3 md:my-0 font-bold text-lg rounded hover:text-lime-400">Contact</a>
+            <a href="" class="mx-2 my-3 md:my-0 font-semibold text-lg rounded text-slate-500 hover:text-lime-400 hover:underline hover:underline-offset-4 ">Profile</a>
+            <a href="" class="mx-2 my-2 md:my-0 font-semibold text-lg rounded text-slate-500 hover:text-lime-400 hover:underline hover:underline-offset-4 ">Setting</a>
+            <a href="" class="mx-2 my-3 md:my-0 font-semibold text-lg rounded text-slate-500 hover:text-lime-400 hover:underline hover:underline-offset-4 ">Contact</a>
            </div>
            <img src="/resource/avatar-boy-svgrepo-com.svg" alt="avatar"
            width="40px" height="40px" class="m-2 p-1 cursor-pointer hidden  ">
@@ -32,6 +32,9 @@
    </div>
    </div>
    <!-- end header section -->
+
+
+
     <!-- start log in section -->
      <div class="m-8 md:m-24 bg-slate-50 rounded-2xl flex flex-col md:flex-row ">
     <div class=" md:w-1/2 p-5">
@@ -40,23 +43,28 @@
         avaiable to other Hello apps in the brwoser. </p>
     </div>
     <div class="flex flex-col md:w-1/2 p-5" >
-        <div class=" my-2 h-16 border-[1px] hover:border-2
-        border-slate-600 hover:border-blue-800 
-       flex items-center relative rounded">
-           <p class="bg-slate-50
-           hover:absolute hover:-top-3 hover:left-2 px-2 text-gray-400
-            hover:text-blue-500 hover:text-sm">Password</p>
-       </div>
-    <div class=" my-2 h-16 border-[1px] hover:border-2
-     border-slate-600 hover:border-blue-800 
-    flex items-center relative rounded">
-        <p class="bg-slate-50
-        hover:absolute hover:-top-3 hover:left-2 px-2 text-gray-400
-         hover:text-blue-500 hover:text-sm">Password</p>
-    </div>
-    <button class="my-2 inline-block bg-rose-600 text-white font-semibold text-lg py-3 px-5 
+        
+        <div class="relative w-full">
+        <label id="email_placeholder" for="email_input" class="bg-slate-50
+         absolute top-5 left-2  text-slate-500 transition-all duration-300">Email or phone</label>
+        <input id="email_input" type="text"  class="w-full h-16  border-[1px]
+        border-slate-600 bg-slate-50 rounded px-2  "/>
+        </div>
+
+        <div class="relative w-full mt-4 mb-1">
+            <label id="pass_placeholder" for="pass_input" class="bg-slate-50
+             absolute top-5 left-2 text-slate-500 transition-all duration-300">Password</label>
+            <input id="pass_input" type="password"  class="w-full h-16  border-[1px]
+            border-slate-600 bg-slate-50 rounded px-2  "/>
+        </div>
+        <div>
+            <input type="checkbox" id="input_checkbox">
+            <label for="input_checkbox" >Show password</label>
+        </div>
+
+    <button class="my-3 inline-block bg-rose-600 text-white font-semibold text-lg py-3 px-5 
     rounded-full hover:bg-rose-900 hover:transition-colors 
-    focus:ring-2 ring-offset-2 ring-violet-700">Log In</button>
+    focus:ring-2 ring-offset-2 ring-red-900">Log In</button>
     
     </div>
 
