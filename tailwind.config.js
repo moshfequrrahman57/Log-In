@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         'light-chocolate': '#fefae0',
       },
+      lineHeight: {
+        'extra-tight': '.1',
+      }
     }
   },
   plugins: [],
