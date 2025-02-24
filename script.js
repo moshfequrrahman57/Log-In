@@ -45,13 +45,16 @@ input_checkbox.onclick=()=>{
     }
     else
     {
-        console.log("nog checked");
+        console.log("not checked");
         pass_input.type="password";
     }
 }
 
 
 const submit_btn=document.getElementById("submit_btn");
+const failed_mess=document.getElementById("failed_mess");
+failed_mess.style.display="none";
+
 submit_btn.onclick=()=>{
     console.log(email_input.value,pass_input.value);
     let email_id=email_input.value;
@@ -66,6 +69,8 @@ submit_btn.onclick=()=>{
     }
     else{
         console.log("Log in failed");
+        failed_mess.style.display="flex";
+
     }
 }
 
