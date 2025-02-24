@@ -8,7 +8,11 @@ module.exports = {
       },
       lineHeight: {
         'extra-tight': '.1',
-      }
+      },
+    fontFamily:{
+      "Yesteryear": 'serif',
+    }
+      
     }
   },
   plugins: [],
