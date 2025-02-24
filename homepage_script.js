@@ -5,3 +5,5 @@ menu_btn.onclick=()=>{
 
     menu_items.classList.toggle("active");
 }
+
+console.log("HOme page");
