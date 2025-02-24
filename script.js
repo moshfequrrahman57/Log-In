@@ -35,17 +35,14 @@ pass_input.onblur=()=>{
     }
 }
 
-const input_checkbox=document.getElementById("input_checkbox");
+const show_pass=document.getElementById("show_pass");
 
-input_checkbox.onclick=()=>{
-    if(input_checkbox.checked){
-        console.log("Checked");
+show_pass.onclick=()=>{
+  
+    if(pass_input.type==="password"){
         pass_input.type="text";
-        
     }
-    else
-    {
-        console.log("not checked");
+    else {
         pass_input.type="password";
     }
 }
