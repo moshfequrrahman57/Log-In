@@ -23,11 +23,11 @@
         flex flex-col   w-full items-center  -translate-y-52 md:translate-y-0
         md:relative md:top-0 md:flex-row md:justify-around 
          md:z-0 transition-transform duration-500">
-            <a href="" class="mx-2 my-3 md:my-0 font-semibold text-lg rounded text-slate-500 hover:text-lime-400 hover:underline hover:underline-offset-4 ">Profile</a>
+            <a href="" class="mx-2 my-3 md:my-0 font-semibold text-lg rounded text-slate-500 hover:text-lime-400 hover:underline hover:underline-offset-4 ">Department</a>
             <a href="" class="mx-2 my-2 md:my-0 font-semibold text-lg rounded text-slate-500 hover:text-lime-400 hover:underline hover:underline-offset-4 ">Setting</a>
             <a href="" class="mx-2 my-3 md:my-0 font-semibold text-lg rounded text-slate-500 hover:text-lime-400 hover:underline hover:underline-offset-4 ">Contact</a>
            </div>
-           <img src="/resource/avatar-boy-svgrepo-com.svg" alt="avatar"
+           <img id="log_in_logo" src="/resource/avatar-boy-svgrepo-com.svg" alt="avatar"
            width="40px" height="40px" class="m-2 p-1 cursor-pointer hidden  ">
         <img id="menu_btn" src="/resource/menu-dots-svgrepo-com.svg" alt="menu"
         width="40px" height="40px"
@@ -39,13 +39,18 @@
 
 
     <!-- start log in section -->
-     <div class="m-8 md:m-24 bg-slate-50 rounded-2xl flex flex-col md:flex-row ">
+     <div class="m-5 md:m-24 bg-slate-50 rounded-2xl flex flex-col md:flex-row ">
     <div class=" md:w-1/2 p-5">
     <p class="font-semibold text-4xl py-4 ">Sign in</p>
     <p class="text-slate-700">with your Hello Account to continue to Hello. This account will be
         avaiable to other Hello apps in the brwoser. </p>
-    <p class="mt-4 md:mt-7 text-2xl md:text-3xl font-medium text-blue-700 font-Yesteryear ">Test User ID: &nbsp; <span>abc@hello.com</span></p>
-    <p class="text-2xl md:text-3xl font-medium text-blue-700 font-Yesteryear ">Password: &nbsp; <span>123</span></p>
+    <p class="mt-4 md:mt-7 text-2xl md:text-3xl font-medium text-[#91c9a8] font-Yesteryear ">Test User ID: &nbsp; 
+        <img id="copy_btn" src="/resource/copy-but-svgrepo-com.svg" alt="copy" width="40px" height="40px" class="mx-2 float-right cursor-pointer">
+     
+        <span>abc@hello.com</span>
+    
+    </p>
+    <p class="text-2xl md:text-3xl font-medium text-[#91c9a8] font-Yesteryear ">Password: &nbsp; <span>123</span></p>
      
     </div>
     <div class="flex flex-col md:w-1/2 p-5" >
@@ -54,7 +59,7 @@
         <label id="email_placeholder" for="email_input" class="bg-slate-50
          absolute top-5 left-2  text-slate-500 transition-all duration-300">Email or phone</label>
         <input id="email_input" type="text"  class="w-full h-16  border-[1px]
-        border-slate-600 bg-slate-50 rounded px-2  "/>
+        border-slate-600 bg-slate-50 rounded px-2  " autocomplete="email"/>
         </div>
 
         <div class="relative w-full mt-4 mb-1">
@@ -71,20 +76,20 @@
             </span>
         </div>
 
-    <button class="my-3 inline-block bg-rose-600 text-white font-semibold text-lg py-3 px-5 
+    <button id="submit_btn" class="my-3 inline-block bg-rose-600 text-white font-semibold text-lg py-3 px-5 
     rounded-full hover:bg-rose-900 hover:transition-colors 
-    focus:ring-2 ring-offset-2 ring-red-900">Log In</button>
+    focus:ring-2 ring-offset-2 ring-red-900"><a id="log_in" href="" target="_self">Log In</a></button>
 <div class="flex justify-center items-center w-full">
     <h2 class=" w-3/4 text-center  border-b border-slate-500 leading-extra-tight mt-2 mb-5">
         <span class="px-4 font-bold bg-slate-50 text-slate-500">Or</span></h2>
 </div>
 
     <div class="flex w-full items-center justify-center">
-        <button class="mx-2 font-bold  flex items-center justify-center rounded-md border border-slate-700 w-full p-2">
+        <button class="mx-2 text-sm md:text-base font-bold  flex items-center justify-center rounded-md border border-slate-700 w-full p-2">
             <img src="/resource/facebook-network-communication-internet-interaction-svgrepo-com.svg" alt="fb"
             width="40px" height="40px" class="float-left px-2">Facebook
         </button>
-        <button class="mx-2  font-bold  flex items-center justify-center rounded-md border border-slate-700 w-full p-2">
+        <button class="mx-2 text-sm md:text-base  font-bold  flex items-center justify-center rounded-md border border-slate-700 w-full p-2">
             <img src="/resource/google-color-svgrepo-com.svg" alt="google"
             width="40px" height="40px" class="float-left px-2">Google
         </button>
