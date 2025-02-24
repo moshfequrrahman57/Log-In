@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <script type="module" crossorigin src="/assets/index-CXiGTmug.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BXBPkBCp.css">
+    <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-JaXRsZgR.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CaC40Ci3.css">
 </head>
 <body>
   <!-- start header section -->
@@ -42,6 +45,9 @@
     <p class="font-semibold text-4xl py-4 ">Sign in</p>
     <p class="text-slate-700">with your Hello Account to continue to Hello. This account will be
         avaiable to other Hello apps in the brwoser. </p>
+    <p class="mt-4 md:mt-7 text-2xl md:text-3xl font-medium text-blue-700 font-Yesteryear ">Test User ID: &nbsp; <span>abc@hello.com</span></p>
+    <p class="text-2xl md:text-3xl font-medium text-blue-700 font-Yesteryear ">Password: &nbsp; <span>123</span></p>
+     
     </div>
     <div class="flex flex-col md:w-1/2 p-5" >
         
@@ -61,14 +67,41 @@
         <div>
             <input type="checkbox" id="input_checkbox">
             <label for="input_checkbox" >Show password</label>
+            <span class="float-right text-sm hover:text-blue-600">
+                <a href="">Forgotten password?</a>
+            </span>
         </div>
 
     <button class="my-3 inline-block bg-rose-600 text-white font-semibold text-lg py-3 px-5 
     rounded-full hover:bg-rose-900 hover:transition-colors 
     focus:ring-2 ring-offset-2 ring-red-900">Log In</button>
-    
+<div class="flex justify-center items-center w-full">
+    <h2 class=" w-3/4 text-center  border-b border-slate-500 leading-extra-tight mt-2 mb-5">
+        <span class="px-4 font-bold bg-slate-50 text-slate-500">Or</span></h2>
+</div>
+
+    <div class="flex w-full items-center justify-center">
+        <button class="mx-2 font-bold  flex items-center justify-center rounded-md border border-slate-700 w-full p-2">
+            <img src="/assets/facebook-network-communication-internet-interaction-svgrepo-com-CyoDcMsD.svg" alt="fb"
+            width="40px" height="40px" class="float-left px-2">Facebook
+        </button>
+        <button class="mx-2  font-bold  flex items-center justify-center rounded-md border border-slate-700 w-full p-2">
+            <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='-0.5%200%2048%2048'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3eGoogle-color%3c/title%3e%3cdesc%3eCreated%20with%20Sketch.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg%20id='Icons'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cg%20id='Color-'%20transform='translate(-401.000000,%20-860.000000)'%3e%3cg%20id='Google'%20transform='translate(401.000000,%20860.000000)'%3e%3cpath%20d='M9.82727273,24%20C9.82727273,22.4757333%2010.0804318,21.0144%2010.5322727,19.6437333%20L2.62345455,13.6042667%20C1.08206818,16.7338667%200.213636364,20.2602667%200.213636364,24%20C0.213636364,27.7365333%201.081,31.2608%202.62025,34.3882667%20L10.5247955,28.3370667%20C10.0772273,26.9728%209.82727273,25.5168%209.82727273,24'%20id='Fill-1'%20fill='%23FBBC05'%3e%3c/path%3e%3cpath%20d='M23.7136364,10.1333333%20C27.025,10.1333333%2030.0159091,11.3066667%2032.3659091,13.2266667%20L39.2022727,6.4%20C35.0363636,2.77333333%2029.6954545,0.533333333%2023.7136364,0.533333333%20C14.4268636,0.533333333%206.44540909,5.84426667%202.62345455,13.6042667%20L10.5322727,19.6437333%20C12.3545909,14.112%2017.5491591,10.1333333%2023.7136364,10.1333333'%20id='Fill-2'%20fill='%23EB4335'%3e%3c/path%3e%3cpath%20d='M23.7136364,37.8666667%20C17.5491591,37.8666667%2012.3545909,33.888%2010.5322727,28.3562667%20L2.62345455,34.3946667%20C6.44540909,42.1557333%2014.4268636,47.4666667%2023.7136364,47.4666667%20C29.4455,47.4666667%2034.9177955,45.4314667%2039.0249545,41.6181333%20L31.5177727,35.8144%20C29.3995682,37.1488%2026.7323182,37.8666667%2023.7136364,37.8666667'%20id='Fill-3'%20fill='%2334A853'%3e%3c/path%3e%3cpath%20d='M46.1454545,24%20C46.1454545,22.6133333%2045.9318182,21.12%2045.6113636,19.7333333%20L23.7136364,19.7333333%20L23.7136364,28.8%20L36.3181818,28.8%20C35.6879545,31.8912%2033.9724545,34.2677333%2031.5177727,35.8144%20L39.0249545,41.6181333%20C43.3393409,37.6138667%2046.1454545,31.6490667%2046.1454545,24'%20id='Fill-4'%20fill='%234285F4'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="google"
+            width="40px" height="40px" class="float-left px-2">Google
+        </button>
     </div>
 
+    <p class="text-xs m-1 px-4">By clicking Continue to 
+        join or sign in, you agree to Hello’s  
+            <a href="" class="text-blue-800 hover:underline">User Agreement</a>, </span>
+            <a href="" class="text-blue-800 hover:underline"> Privacy Policy</a>, </span>
+            <a href="" class="text-blue-800 hover:underline"> Privacy  Cookie Policy</a> . </span>
+       </p>
+
+
+       <p class="flex justify-center text-slate-800 mt-6">New to Hello? &nbsp;   <span> <a href="" class="text-blue-800 font-semibold">  Create an account.</a></span></p>
+
+    </div>
     </div>
    <!-- end log in section -->
 </body>
