@@ -82,7 +82,10 @@ copy_btn.onclick=()=>{
     if(modified_email==="abc@hello.com" && pass==="123"){
         console.log(" Authentic");
        failed_mess.style.display="none";
-        location.replace('homepage.html');
+        // location.replace('homepage.html');
+        email_input.value="";
+        pass_input.value="";
+        window.location.href="homepage.html";
       }
         else{
             console.log("Log in failed");
