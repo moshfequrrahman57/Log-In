@@ -33,19 +33,20 @@ email_input.onblur=()=>{
         email_placeholder.classList.add("email_pass_placeholder_style");
         console.log("email has value");
         
+        
     }
 }
 
 pass_input.onfocus=()=>{
     pass_placeholder.classList.add("email_pass_placeholder_style");
-    console.log("input focus");
+    console.log("password focus");
 }
 pass_input.onblur=()=>{
     pass_placeholder.classList.remove("email_pass_placeholder_style");
-    console.log("input focus remove");
+    console.log("password focus remove");
     if(pass_input.value){
         pass_placeholder.classList.add("email_pass_placeholder_style");
-        console.log("input has value");
+        console.log("password has value");
     }
 }
 
@@ -63,11 +64,12 @@ show_pass.onclick=()=>{
     }
 }
 //copy email to input field
+
 copy_btn.onclick=()=>{
-    email_input.value="abc@hello.com";
+     email_input.value="abc@hello.com";
     email_input.focus();
     email_input.select();
-    navigator.clipboard.writeText("Noman");
+    // navigator.clipboard.writeText("Noman");
     console.log("copy btn click");
   }
 
@@ -83,6 +85,7 @@ copy_btn.onclick=()=>{
         console.log(" Authentic");
        failed_mess.style.display="none";
         // location.replace('homepage.html');
+        
         email_input.value="";
         pass_input.value="";
         window.location.href="homepage.html";
@@ -90,7 +93,7 @@ copy_btn.onclick=()=>{
         else{
             console.log("Log in failed");
            failed_mess.style.display="flex";
-          // location.replace('index.html');
+          
             return false;
   }
 }
